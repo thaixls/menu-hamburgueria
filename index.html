@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./styles/output.css" />
 
     <title>Burgueria do Zé</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- HEADER -->
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
-        <div class="w-full h-full flex flex-col justify-center items-center">
-            <img
-            src="./assets/hamb-1.png"
-            alt="Logo 1"
-            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
-            />
-            <h1 class="text-4xl mt-4 mb2 font-bold text-white">
-                Zé do Burguer
-            </h1>
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/hamb-1.png"
+          alt="Logo 1"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4xl mt-4 mb2 font-bold text-white">Zé do Burguer</h1>
 
-            <span class="text-white font-medium px-3 py-1"> Rua Tito Oliani 04, São Paulo </span>
+        <span class="text-white font-medium px-3 py-1">
+          Rua Tito Oliani 04, São Paulo
+        </span>
 
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium">
-                    seg a dom - 18:00 as 22:00
-                </span>
-            </div>
-        
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-medium">
+            seg a dom - 18:00 as 22:00
+          </span>
         </div>
-
+      </div>
     </header>
 
     <!--FIM DO HEADER-->
 
     <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
-        Conheça nosso menu
+      Conheça nosso menu
     </h2>
 
     <!--INICIO MENU-->
 
-    <div>
+    <div id="menu">
 
+      <main class="grid grid-cols-1">
+
+        <!--PRODUTO ITEM-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-1.png"
+            alt="Heat Burguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Heat Burguer</p>
+            <p class="text-sm">
+              O melhor X-Salada com a nossa maionese caseira campeã de vendas.
+              Pão selado na manteiga, hamburguer artesanal 160g, queijo cheddar,
+              alface, tomate e maionese heat.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 34,90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Heat Burguer"
+              data-price="34,90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+
+        </div>
+        <!--FIM PRODUTO ITEM-->
+
+      </main>
+    
     </div>
 
     <!---FIM MENU-->
-
-</body>
+  </body>
 </html>
