@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./styles/output.css" />
 
-    <title>Burgueria do Zé</title>
+    <title>Alice's</title>
   </head>
   <body>
     <!-- HEADER -->
+
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
       <div class="w-full h-full flex flex-col justify-center items-center">
         <img
@@ -19,7 +24,7 @@
           alt="Logo 1"
           class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
         />
-        <h1 class="text-4xl mt-4 mb2 font-bold text-white">Zé do Burguer</h1>
+        <h1 class="text-4xl mt-4 mb2 font-bold text-white">Alice's Burguer</h1>
 
         <span class="text-white font-medium px-3 py-1">
           Rua Tito Oliani 04, São Paulo
@@ -43,7 +48,7 @@
 
     <div id="menu">
 
-      <main class="grid grid-cols-1">
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
 
         <!--PRODUTO ITEM-->
 
@@ -63,11 +68,11 @@
             </p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 34,90</p>
+              <p class="font-bold text-lg">R$ 34.90</p>
               <button 
               class="bg-gray-900 px-5 rounded add-to-cart-btn"
               data-name="Heat Burguer"
-              data-price="34,90">
+              data-price="34.90">
                <i class="fa fa-cart-plus text-lg text-white"></i>
               </button>
             </div>
@@ -78,10 +83,400 @@
         </div>
         <!--FIM PRODUTO ITEM-->
 
+        <!--COMEÇO PRODUTO ITEM 2-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-2.png"
+            alt="Boomer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Boomer</p>
+            <p class="text-sm">
+              Para os boomers e amantes de bacon! Pão de brioche selado na manteiga, 
+              hambúrguer artesanal 160g, queijo cheddar, cebola caramelizada, bacon e maionese Heat.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 38.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Boomer"
+              data-price="38.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- FIM DO PRODUTO ITEM 2-->
+
+        <!--PRODUTO ITEM 3-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-3.png"
+            alt="Classic"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Classic</p>
+            <p class="text-sm">
+              O clássico pão, carne, queijo e nossa maionese caseira. 
+              Pão selado na manteiga, hambúrguer artesanal 160g, queijo cheddar e maionese Heat.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 29.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Classic"
+              data-price="29.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+
+        </div>
+        <!--FIM PRODUTO ITEM 3-->
+
+        <!--COMEÇO PRODUTO ITEM 4-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-4.png"
+            alt="Chick Burguer"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Chick Burguer</p>
+            <p class="text-sm">
+              Pão de brioche selado na manteiga, sobrecoxa de frango marinada e empanada no estilo asiático, 
+              salada coleslaw e maionese Heat.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 32.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Chick Burguer"
+              data-price="32.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- FIM DO PRODUTO ITEM 4-->
+
+        <!--PRODUTO ITEM 5-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-5.png"
+            alt="Big Heat (matador de fome)"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Big Heat (matador de fome)</p>
+            <p class="text-sm">
+              Esse é certeza que vai matar sua fome! 
+              Pão de brioche selado na manteiga, 2 hambúrgueres artesanais de 160g cada, 
+              queijo cheddar duplo, alface, tomate e maionese Heat.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 49.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Big Heat (matador de fome)"
+              data-price="49.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+        <!--FIM PRODUTO ITEM 5-->
+
+        <!--PRODUTO ITEM 6-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-6.png"
+            alt="Oklahoma"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Oklahoma</p>
+            <p class="text-sm">
+              Uma combinação que faz sucesso. 
+              Pão selado na manteiga, 2 hambúrgueres smash 80g com cebola caramelizada, 
+              queijo cheddar e maionese Heat.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 36.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Oklahoma"
+              data-price="36.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+        <!--FIM PRODUTO ITEM 6-->
+
+        <!--PRODUTO ITEM 7-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-7.png"
+            alt="Gordon Brown"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">Gordon Brown</p>
+            <p class="text-sm">
+              Pão, burger de 160g, queijo gorgonzola, cebola caramelizada sem açúcar, 
+              rúcula e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 41.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Gordon Brown"
+              data-price="41.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+        <!--FIM PRODUTO ITEM 7-->
+
+                <!--PRODUTO ITEM 8-->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-8.png"
+            alt="The Queen's"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div>
+            <p class="font-bold">The Queen's</p>
+            <p class="text-sm">
+              Pão de brioche selado na manteiga, burger de 160g, queijo brie, rúcula, alface, tomate e mel.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 46.90</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="The Queen's"
+              data-price="46.90">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+        <!--FIM PRODUTO ITEM 8-->
+
       </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">
+          Bebidas
+        </h2>
+      </div>
+
+      <!--GRID BEBIDAS-->
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+        <!--COMEÇO PRODUTO iTEM BEBIDA-->
+
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-1.png"
+            alt="Cola-Cola 350ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Cola-Cola 350ml</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.50</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Cola-Cola 350ml"
+              data-price="6.50">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO ITEM BEBIDA-->
+
+        <!--COMEÇO PRODUTO iTEM BEBIDA 2-->
+
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-2.png"
+            alt="Guaraná Zero 350ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Guaraná Zero 350ml</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.50</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Guaraná Zero 350ml"
+              data-price="5.50">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO ITEM BEBIDA 2-->
+
+        <!--COMEÇO PRODUTO iTEM BEBIDA 3-->
+
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-3.png"
+            alt="Pepsi 350ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Pepsi 350ml</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.80</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Pepsi 350ml"
+              data-price="5.80">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO ITEM BEBIDA 3-->
+
+        <!--COMEÇO PRODUTO iTEM BEBIDA 4-->
+
+        <div class="flex gap-2 w-full">
+          <img
+            src="./assets/refri-4.png"
+            alt="Fanta Laranja 350ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Fanta Laranja 350ml</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.80</p>
+              <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Fanta Laranja 350ml"
+              data-price="5.80">
+               <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FIM DO PRODUTO ITEM BEBIDA 4-->
+
+      </div>
+      <!-- FIM GRID BEBIDAS-->
     
     </div>
-
     <!---FIM MENU-->
+
+    <!--MODAL CART-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] flex items-center justify-center hidden">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+         <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+         <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+         <p class="font-bold mt-4">Endereço de entrega:</p>
+         <input
+         type="=text"
+         placeholder="Digite seu endereço completo..."
+         id="andress"
+         class="w-full border-2 p-1 rounded my-1"
+         />
+         <p class="text-red-500 hidden" id="andress-warn">Digite seu endereço completo!</p>
+
+         <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn">fechar</button>
+          <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+         </div>
+
+      </div>
+    </div>
+    <!--FIM MODAL CART-->
+
+    <!--BUTTON CART FOOTER-->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex intems-center justify-center">
+      <button 
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+        (<span id="cart-count">0</span>)
+        Veja meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+
+    <!-- FIM BUTTON CART FOOTER-->
+
+
   </body>
 </html>
